@@ -17,6 +17,7 @@ This code is tested to run correctly with
   - `manipulate` - for interactive plot
   - `testthat` - in case you want to run the Unit Tests
 
+The latest R version can be downloaded from [here](https://www.r-project.org/), while the latest RStudio from [here](https://rstudio.com/products/rstudio/download/?utm_source=downloadrstudio&utm_medium=Site&utm_campaign=home-hero-cta). 
 # How to use
 
 Sourcing or running `interactive_bonds.R` should generate the interactive plot like this:
