@@ -14,9 +14,10 @@ This code is tested to run correctly with
 - RStudio Version 1.2.1335
   Older versions could also work.
   Two packages are direct dependencies:
-  `manipulate` - for interactive plot
-  `testthat` - in case you want to run the Unit Tests
+    - `manipulate` - for interactive plot
+    - `testthat` - in case you want to run the Unit Tests
 
 # How to use
 
 Sourcing or running `interactive_bonds.R` should generate the interactive plot like this:
+![Bond price](screenshots/picture.png)
