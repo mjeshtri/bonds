@@ -14,10 +14,13 @@ This code is tested to run correctly with
 - RStudio Version 1.2.1335
   Older versions could also work.
   Two packages are direct dependencies:
-    - `manipulate` - for interactive plot
-    - `testthat` - in case you want to run the Unit Tests
+  - `manipulate` - for interactive plot
+  - `testthat` - in case you want to run the Unit Tests
 
 # How to use
 
 Sourcing or running `interactive_bonds.R` should generate the interactive plot like this:
+
 ![Bond price](screenshots/picture.png)
+
+The example is completly theoretical as it assumes that at time when when the bond with coupon rate `c` (and selected TTM and coupon frequency) is issued, we select the required Yield. If the yield matches the coupon rate the price matches the face value (expresed as percentage) and there is no risk. However, if some new interest rate is applied ( see x-axes on top), we can observe the new theoretical price (in second y- axis). In addition the script calculates the Macaulay’s duration, modified duration, convexity and convexity effect.
