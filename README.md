@@ -15,7 +15,7 @@ In case you do not want to install anything just visit the [interactive plot](ht
 This code is tested to run correctly with
 
 - R version 4.5.1 (2025-06-13) -- "Great Square Root"
-- RStudio Version 1.2.1335 RStudio 2025.09.0+387 "Cucumberleaf Sunflower" Release (af5fc22a687c0f462ee27c6afeeee38ee46507b9, 2025-09-11) for Ubuntu Jammy
+- RStudio Version 2025.09.0+387 "Cucumberleaf Sunflower" Release (af5fc22a687c0f462ee27c6afeeee38ee46507b9, 2025-09-11) for Ubuntu Jammy
   Older versions could also work.
 
 Two packages are direct dependencies when you want to try the code locally:
