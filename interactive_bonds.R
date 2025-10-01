@@ -7,7 +7,7 @@ library(manipulate)
 # Dynamically set working directory to the script's location
 get_script_path <- function() {
   # For Rscript or source()
-  if (!is.null(sys.frame(1)$ofile)) {
+  if (exists("ofile", where = sys.frame(1))) {
     return(normalizePath(sys.frame(1)$ofile))
   }
   # For RStudio
