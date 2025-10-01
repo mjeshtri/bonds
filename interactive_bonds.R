@@ -1,6 +1,6 @@
 #   Author: Krenar Avdulaj
-#   19 February 2015
-#   Last update: 1 October 2025
+#   Created: February 19, 2015
+#   Last update: October 1, 2025
 
 library(manipulate)
 
