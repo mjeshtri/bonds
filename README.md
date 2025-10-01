@@ -30,7 +30,8 @@ The latest R version can be downloaded from [here](https://www.r-project.org/), 
 Command
 
 ```r
-source("~/bonds/interactive_bonds.R") # adjust the path as needed
+setwd("~/bonds") # adjust the path as needed
+source("./interactive_bonds.R")
 ```
 
 in RStudio console, or open `interactive_bonds.R` in RStudio and press `Source` button. After this you should generate the interactive plot like this:

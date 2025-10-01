@@ -142,4 +142,5 @@ bondPlot = function(c, n, f, r, rN) {
   mtext(side = 2, "Price in % for selected YTM", line = 2)
   mtext(side = 3, "Market interest rate", line = 2)
   mtext(side = 4, "Market price in %", line = 2)
+  par(op)
 }
