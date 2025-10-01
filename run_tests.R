@@ -3,8 +3,9 @@ library(testthat)
 # Dynamically set working directory to the script's location
 get_script_path <- function() {
   # For Rscript or source()
-  if (exists("ofile", where = sys.frame(1)) && !is.null(sys.frame(1)$ofile)) {
-    return(normalizePath(sys.frame(1)$ofile))
+  frame1 <- sys.frame(1)
+  if (!is.null(frame1) && exists("ofile", where = frame1) && !is.null(frame1$ofile)) {
+    return(normalizePath(frame1$ofile))
   }
   # For RStudio
   if (requireNamespace("rstudioapi", quietly = TRUE) &&
