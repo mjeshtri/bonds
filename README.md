@@ -1,5 +1,7 @@
 # Bond price sensitivity
 
+[![R Tests](https://github.com/mjeshtri/bonds/actions/workflows/r-tests.yml/badge.svg)](https://github.com/mjeshtri/bonds/actions/workflows/r-tests.yml)
+
 This repo offers an interactive way for studying the bond price sensitivity as a function of:
 
 - coupon rate
