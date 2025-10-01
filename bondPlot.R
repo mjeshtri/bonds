@@ -16,6 +16,7 @@ bondPlot = function(c, n, f, r, rN) {
   yields <- seq(0.02, 0.5, by = 0.01)
   nominal_price <- bond_price(c, n, f, yields)
   op <- par(mar = c(6, 4, 4.5, 4) + 0.5)
+  on.exit(par(op)) # ensure reset on exit, even on error
   plot(
     yields,
     nominal_price,
@@ -142,5 +143,4 @@ bondPlot = function(c, n, f, r, rN) {
   mtext(side = 2, "Price in % for selected YTM", line = 2)
   mtext(side = 3, "Market interest rate", line = 2)
   mtext(side = 4, "Market price in %", line = 2)
-  par(op)
 }
