@@ -1,5 +1,5 @@
-library(testthat) 
+library(testthat)
 
 source("helpers/helpers.R")
 
-test_results <- test_dir("helpers", reporter="summary")
+test_results <- test_dir("helpers", reporter = "summary")
