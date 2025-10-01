@@ -44,7 +44,7 @@ ui <- fluidPage(
         ),
         sliderInput(
           "rN",
-          "New interest rate (%)",
+          "Market interest rate (%)",
           min = 0.5,
           max = 50,
           value = 14,
@@ -52,24 +52,26 @@ ui <- fluidPage(
         )
       )
     ),
-    mainPanel(plotOutput("bondPlot", height = "75vh"))
+    mainPanel(plotOutput("bondPlot", height = "65vh"))
   ),
   helpText(
     HTML(
-      "<b>Plain Vanilla Bond Specification</b>
-      <ul>
-        <li>Face value: it is automatically set at 100%, this way it can be scaled at whatever real face value you want.</li>
-        <li>Coupon rate: Set the bond's coupon rate.</li>
-        <li>TTM: Set the time to maturity (in years).</li>
-        <li>Frequency: Choose annual or semi-annual payments.</li>
+      "<div style='background:#f8f9fa; border:1px solid #e3e3e3; border-radius:8px; padding:16px; margin-top:16px;'>
+      <h4 style='color:#2c3e50; margin-top:0;'><b>Plain Vanilla Bond Specification</b></h4>
+      <ul style='margin-bottom:16px;'>
+        <li>💵 <b>Face value:</b> Automatically set at 100%, can be scaled to any real face value.</li>
+        <li>💲 <b>Coupon rate:</b> Set the bond's coupon rate.</li>
+        <li>⏳ <b>TTM:</b> Set the time to maturity (in years).</li>
+        <li>📅 <b>Frequency:</b> Choose annual or semi-annual payments.</li>
       </ul>
-      <b>Simulate Change in Market Interest Rates or Change in YTM</b>
+      <h4 style='color:#2c3e50;'><b>Simulate Change in Market Interest Rates or Change in YTM</b></h4>
       <ul>
-        <li>New market interest rate: Simulate a change in market rates and observe the impact on (market) bond pricing and risk.</li>
-        <li>YTM: Set your yield to maturity target. This is the internal rate of return which you require given the bond characteristics. This will give you the bond price which you should buy to achieve this target.</li>
+        <li>📈 <b>Market interest rate:</b> Simulate a change in market rates and observe the impact on bond pricing and risk.</li>
+        <li>🎯 <b>YTM:</b> Set your yield to maturity target. This is the internal rate of return required given the bond characteristics. This will give you the bond price to achieve this target.</li>
       </ul>
-      <p>The plot will update automatically as you change the inputs. We assume the bond specification, market interest rate and YTM for the pricing and risk analysis. Any exogenous factors are not considered in this simple model.<br>
-      The code is available at <a href='https://github.com/mjeshtri/bonds' target='_blank'>https://github.com/mjeshtri/bonds</a></p>"
+      <p style='margin-top:16px;'>The plot will update automatically as you change the inputs.<br>
+      The code is available at <a href='https://github.com/mjeshtri/bonds' target='_blank'>https://github.com/mjeshtri/bonds</a></p>
+    </div>"
     )
   )
 )

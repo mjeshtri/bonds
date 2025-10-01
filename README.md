@@ -3,8 +3,10 @@
 This repo offers an interactive way for studying the bond price sensitivity as a function of:
 
 - coupon rate
+- coupon frequency
 - time-to-maturity (TTM)
-- yield
+- yield to maturity
+- market interest rate
 
 In case you do not want to install anything just visit the [interactive plot](https://krenar.shinyapps.io/bonds/).
 
