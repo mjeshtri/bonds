@@ -28,7 +28,7 @@ bondPlot = function(c, n, f, r, rN) {
   title(main = "Bond price and risk", line = 4)
   
   
-  # calculate the gradient for tanget line
+  # calculate the gradient for tangent line
   myenv <- new.env()
   assign("r", r, envir = myenv)
   drv <- numericDeriv(quote(bond_price(c, n, f, r)), c("r"), myenv)
